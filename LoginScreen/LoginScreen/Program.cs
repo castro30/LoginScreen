@@ -16,9 +16,26 @@ namespace LoginScreen
             // exit the application.
             Console.Write("Enter login: ");
             string LogIn = Console.ReadLine();
+            string riteLogin = "admin";
 
-            Console.Write("Enter password: ");
-            string passWord = Console.ReadLine();
+
+
+            if (LogIn == riteLogin)
+            {
+                Console.Write("Enter password: ");
+                string passWord = Console.ReadLine();
+                string ritePassword = "password";
+                if (passWord == ritePassword)
+                {
+                    Console.WriteLine(" Welcome to Program");
+                }
+                else Console.WriteLine("Please try again later. ");
+
+            }
+            else Console.WriteLine("Please try again later. ");
+            Console.ReadKey();
+
+           
 
            
 
